@@ -10,3 +10,11 @@
     }
     return arr;
   }
+  
+    public static void swap(int[] arr, int i, int j){
+     if(arr[i] > arr[j]){
+          int temp = arr[i];
+          arr[i] = arr[j];
+          arr[j] = temp;
+     }
+  }
