@@ -1,0 +1,12 @@
+  public static int[] selectionSort(int [] arr){
+    for(int lastUnSortedIndex = arr.length-1; lastUnSortedIndex >0 ; lastUnSortedIndex--){
+        int lagest = 0;
+        for(int j = 1; j <= lastUnSortedIndex; j++){
+          if(arr[j] > arr[lagest]){
+            lagest = j;
+          }
+        }
+        swap(arr, lagest, lastUnSortedIndex);
+    }
+    return arr;
+  }
